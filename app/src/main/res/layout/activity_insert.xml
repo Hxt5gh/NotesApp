@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".InsertActivity"
+        android:layout_margin="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/inserttoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/teal_700"
+            app:navigationIcon="@drawable/arrow_back_24"
+            android:layout_alignParentTop="true"/>
+
+
+        <LinearLayout
+            android:layout_marginTop="50dp"
+            android:id="@+id/linearLayout"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/idTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/background_round"
+                android:ems="10"
+                android:hint="Title"
+                android:inputType="textPersonName"
+                android:padding="15dp" />
+
+            <!--            <EditText-->
+            <!--                android:id="@+id/idSubtitle"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:ems="10"-->
+            <!--                android:inputType="textPersonName"-->
+            <!--                android:hint="Sub Title"-->
+            <!--                android:layout_marginTop="10dp"-->
+            <!--                android:layout_marginBottom="10dp"-->
+            <!--                android:padding="15dp"-->
+            <!--                android:background="@drawable/background_round" />-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Priority"
+                    android:textColor="@color/black" />
+
+
+                <ImageView
+                    android:id="@+id/priority_green"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/priority_green"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_done_24" />
+
+
+                <ImageView
+                    android:id="@+id/priority_yellow"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/priority_yello"
+                    android:padding="5dp" />
+
+
+                <ImageView
+                    android:id="@+id/priority_red"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/priority_red"
+                    android:padding="5dp" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/idNote"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/background_round"
+                android:ems="10"
+                android:gravity="start"
+                android:hint="Type Here"
+                android:imeOptions="flagNoEnterAction"
+                android:inputType="textMultiLine"
+                android:minHeight="100dp"
+                android:padding="15dp"
+                android:textAlignment="viewStart" />
+
+        </LinearLayout>
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:clickable="true"
+            android:src="@drawable/ic_done_24"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true" />
+
+
+    </RelativeLayout>
+</layout>
