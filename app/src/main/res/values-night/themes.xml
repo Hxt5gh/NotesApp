@@ -13,4 +13,24 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="TEXT">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="SCREEN">
+        <item name="android:background">@color/black</item>
+    </style>
+
+    <style name="icon">
+        <item name="android:tint">@color/white</item>
+    </style>
+
+    <style name="textboxcolour">
+        <item name="android:background">@color/black</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:strokeColor"> @color/white</item>
+        <item name="android:strokeWidth">@integer/material_motion_duration_long_1</item>
+        <item name="android:radius">5dp</item>
+    </style>
 </resources>

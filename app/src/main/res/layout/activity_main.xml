@@ -37,6 +37,7 @@
                 android:layout_height="25dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
+                style="@style/icon"
                 android:src="@drawable/filter_results_button" />
 
             <TextView
@@ -47,10 +48,11 @@
                 android:layout_marginRight="7dp"
                 android:background="@drawable/filter_shape"
                 android:fontFamily="sans-serif"
-                android:paddingLeft="15dp"
                 android:paddingTop="7dp"
-                android:paddingRight="15dp"
                 android:paddingBottom="7dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textAlignment="center"
                 android:text="No Filter"
                 android:textColor="@color/black" />
 
@@ -61,10 +63,11 @@
                 android:layout_marginRight="7dp"
                 android:background="@drawable/filter_shape"
                 android:fontFamily="sans-serif"
-                android:paddingLeft="15dp"
                 android:paddingTop="7dp"
-                android:paddingRight="15dp"
                 android:paddingBottom="7dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textAlignment="center"
                 android:text="Low To High"
                 android:textColor="@color/black" />
 
@@ -75,10 +78,11 @@
                 android:layout_marginRight="7dp"
                 android:background="@drawable/filter_shape"
                 android:fontFamily="sans-serif"
-                android:paddingLeft="15dp"
                 android:paddingTop="7dp"
-                android:paddingRight="15dp"
                 android:paddingBottom="7dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textAlignment="center"
                 android:text="High To Low"
                 android:textColor="@color/black" />
 

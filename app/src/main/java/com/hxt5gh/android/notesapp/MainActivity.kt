@@ -57,6 +57,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.nofilter.setOnClickListener(){
             viewModel.notes.observe(this  , Observer {
+                binding.idRecyclerView.layoutManager = StaggeredGridLayoutManager(2 , StaggeredGridLayoutManager.VERTICAL)
                 adapter = Adapter(this , it)
                 binding.idRecyclerView.adapter = adapter
             })
@@ -67,7 +68,7 @@ class MainActivity : AppCompatActivity() {
         }
         binding.lowtoHigh.setOnClickListener(){
             viewModel.notesLowToHigh.observe(this  , Observer {
-
+                binding.idRecyclerView.layoutManager = StaggeredGridLayoutManager(2 , StaggeredGridLayoutManager.VERTICAL)
                 adapter = Adapter(this , it)
                 binding.idRecyclerView.adapter = adapter
             })
@@ -77,6 +78,7 @@ class MainActivity : AppCompatActivity() {
         }
         binding.hightoLow.setOnClickListener() {
             viewModel.notesHighToLow.observe(this  , Observer {
+                binding.idRecyclerView.layoutManager = StaggeredGridLayoutManager(2 , StaggeredGridLayoutManager.VERTICAL)
                 adapter = Adapter(this , it)
                 binding.idRecyclerView.adapter = adapter
             })

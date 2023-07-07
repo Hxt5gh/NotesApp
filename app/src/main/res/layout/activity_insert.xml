@@ -42,7 +42,9 @@
                 android:ems="10"
                 android:hint="Title"
                 android:inputType="textPersonName"
-                android:padding="15dp" />
+                android:padding="15dp"
+                android:textColor="@color/black"
+                android:textColorHint="#323D45" />
 
             <!--            <EditText-->
             <!--                android:id="@+id/idSubtitle"-->
@@ -72,7 +74,7 @@
                     android:layout_marginRight="10dp"
                     android:fontFamily="sans-serif"
                     android:text="Priority"
-                    android:textColor="@color/black" />
+                    style="@style/TEXT"/>
 
 
                 <ImageView
@@ -108,6 +110,7 @@
             </LinearLayout>
 
             <EditText
+                android:textColor="@color/black"
                 android:id="@+id/idNote"
                 android:layout_width="match_parent"
                 android:layout_height="400dp"
@@ -121,7 +124,8 @@
                 android:inputType="textMultiLine"
                 android:minHeight="100dp"
                 android:padding="15dp"
-                android:textAlignment="viewStart" />
+                android:textAlignment="viewStart"
+                android:textColorHint="#323D45"/>
 
         </LinearLayout>
 

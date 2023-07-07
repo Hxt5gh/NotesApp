@@ -43,6 +43,8 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
                 android:padding="15dp"
+                android:textColor="@color/black"
+                android:textColorHint="#323D45"
                 android:background="@drawable/background_round" />
 
             <LinearLayout
@@ -58,7 +60,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:textColor="@color/black"
+                    style="@style/TEXT"
                     android:text="Priority"
                     android:fontFamily="sans-serif"
                     android:layout_gravity="center_vertical" />
@@ -111,6 +113,8 @@
                 android:layout_marginBottom="10dp"
                 android:gravity="start"
                 android:padding="15dp"
+                android:textColor="@color/black"
+                android:textColorHint="#323D45"
                 android:background="@drawable/background_round" />
 
         </LinearLayout>
